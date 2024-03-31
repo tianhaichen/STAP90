@@ -1,0 +1,28 @@
+METHOD    1                  ! 求解方法:1-增广法
+ TIME         0.e0             10.e0         1.e-3       
+
+
+ NBODY	 1                           ! 体数
+NHINGE   1                           ! 铰数
+NMARK    0                           ! 参考点数
+
+  NOB    1                            ! 体号
+BTYPE    0                            ! 体类型:  0-刚体,1-模态
+MASRG        0.78613e0          0.e0         0.0e0          0.e0 ! 刚体质量，质心在体坐标系的位置(X,Y,Z)
+ JXYZ        0.06502e0        1.00e-5    0.06502e0          0.e0        0.0e0           0.e0 ! 惯量(Jxx,Jyy,Jzz,Jxy,Jxz,Jyz)
+BDDIS        0.0e0             0.5e0          0.e0          0.e0         0.e0           0.e0 ! 位移初值(X,Y,Z,\Theta1,\Theta2,\Theta3) 
+BDVOL         0.e0             0.0e0       0.000e0          0.e0         0.e0           0.e0 ! 速度值(Vx,Vy,Vz,\OMEGA_x,\OMEGA_y,\OMEGA_z) 
+
+
+
+ NOH    1       !   铰点号
+TYPE      REVOLUTE                    ! 铰点类型,柱铰
+BODY     0   1                        ! 内外接体号
+LOCA1    0.e0      0.e0      0.e0     ! 铰点在内接体位置
+LOCA2    0.e0    -0.5e0      0.e0     ! 铰点在外接体位置
+  DA     1.e0      0.e0      0.e0     ! Da端点相对于惯性坐标系的位置,另一端点在惯性系原点(转轴方向)
+ DB1     0.e0      1.e0      0.e0     ! Db1端点相对于体坐标系的位置,另一端点在体系原点
+ DB2     0.e0      0.e0      1.e0     ! Db2端点相对于体坐标系的位置,另一端点在体系原点
+
+
+GRVGR         0.e0           0.e0           -9.8e0

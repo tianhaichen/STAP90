@@ -1,0 +1,36 @@
+ Myid=           0
+ nprocs=           4
+ Myid=           1
+ nprocs=           4
+ Myid=           2
+ nprocs=           4
+ nb_particle =         1911
+ nb_element =         1500
+ nb_mat =            1
+ nb_comp =            1
+ Myid=           3
+ nprocs=           4
+ nb_particle =         1911
+ nb_element =         1500
+ nb_mat =            1
+ nb_comp =            1
+ EndTime =   0.500000000000000     
+ EndTime =   0.500000000000000     
+ nb_particle =         1911
+ nb_element =         1500
+ nb_mat =            1
+ nb_comp =            1
+ EndTime =   0.500000000000000     
+ nb_particle =         1911
+ nb_element =         1500
+ nb_mat =            1
+ nb_comp =            1
+ EndTime =   0.500000000000000     
+ ** Time for preprocessing is  0.359150000000227      seconds
+ solving...
+ Step=     1  T=0.000E+00  DT=1.380E-03  EDist=1.416E-01  K.E.=4.177E+08
+ Step=   100  T=1.365E-01  DT=1.376E-03  EDist=1.391E-01  K.E.=3.453E+08
+ Step=   200  T=2.742E-01  DT=1.377E-03  EDist=9.915E-02  K.E.=2.506E+08
+ Step=   300  T=3.965E-01  DT=1.048E-03  EDist=5.466E-02  K.E.=1.738E+08
+ Step=   400  T=4.878E-01  DT=7.985E-04  EDist=2.416E-02  K.E.=1.237E+08
+ ** Timefor computation is   55.3007250000001       seconds

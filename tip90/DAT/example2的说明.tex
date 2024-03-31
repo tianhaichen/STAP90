@@ -1,0 +1,75 @@
+% Converted from Microsoft Word to LaTeX
+% by Chikrii Softlab Word2TeX converter (version 3.0)
+% Copyright (C) 1999-2003 Chikrii Softlab. All rights reserved.
+% http://www.chikrii.com
+% mailto: info@chikrii.com
+% License: CSL#001781
+
+\documentclass{article}
+\usepackage{latexsym}
+\usepackage{graphicx}
+
+\begin{document}
+example2：具有三个自由度的``弹簧－质量''系统，如图4{\-}8所示，取$k=1$、$m=1$，系统的初始条件为：
+\begin{equation}
+\label{eq1}
+\boldsymbol{u}_0 =\left\{ {{\begin{array}{*{20}c}
+ 2 \hfill \\
+ 2 \hfill \\
+ 0 \hfill \\
+\end{array} }} \right\},\quad \boldsymbol{v}_0 =\left\{ 
+{{\begin{array}{*{20}c}
+ 0 \hfill \\
+ 0 \hfill \\
+ 0 \hfill \\
+\end{array} }} \right\}
+\end{equation}
+求系统的响应。
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=2.89in,height=1.14in]{example2的说明1.eps}}
+\label{fig1}
+\end{figure}
+
+\begin{center}
+图4{\-}8 三自由度``弹簧－质量''系统
+\end{center}
+
+该系统的刚度阵和质量阵为：
+\begin{equation}
+\label{eq2}
+\boldsymbol{K}=\left[ {{\begin{array}{*{20}c}
+ {3k} \hfill & {-k} \hfill & 0 \hfill \\
+ {-k} \hfill & {2k} \hfill & {-k} \hfill \\
+ 0 \hfill & {-k} \hfill & {3k} \hfill \\
+\end{array} }} \right]
+\end{equation}
+\begin{equation}
+\label{eq3}
+\boldsymbol{M}=\left[ {{\begin{array}{*{20}c}
+ m \hfill & 0 \hfill & 0 \hfill \\
+ 0 \hfill & m \hfill & 0 \hfill \\
+ 0 \hfill & 0 \hfill & m \hfill \\
+\end{array} }} \right]
+\end{equation}
+精确解为：
+\begin{equation}
+\label{eq4}
+\boldsymbol{u}(t)=\left\{ {{\begin{array}{*{20}c}
+ {u_1 (t)} \hfill \\
+ {u_2 (t)} \hfill \\
+ {u_3 (t)} \hfill \\
+\end{array} }} \right\}=\left\{ {{\begin{array}{*{20}c}
+ {\cos (\omega _1 t)+\cos (\omega _2 t)} \hfill \\
+ {2\cos (\omega _1 t)} \hfill \\
+ {\cos (\omega _1 t)-\cos (\omega _2 t)} \hfill \\
+\end{array} }} \right\}
+\end{equation}
+其中
+\begin{equation}
+\label{eq5}
+\omega _1 =\sqrt {k \mathord{\left/ {\vphantom {k m}} \right. 
+\kern-\nulldelimiterspace} m} ,\quad \omega _2 =\sqrt {{3k} \mathord{\left/ 
+{\vphantom {{3k} m}} \right. \kern-\nulldelimiterspace} m} 
+\end{equation}
+\end{document}

@@ -1,0 +1,90 @@
+# Microsoft Developer Studio Generated Dependency File, included by COMDYN.mak
+
+..\SRC\CloseOutFiles.f90 : \
+	".\Release\module_ioport.mod"\
+	".\Release\module_parameter.mod"\
+	
+
+..\SRC\OpenOutFiles.f90 : \
+	".\Release\module_ioport.mod"\
+	".\Release\module_parameter.mod"\
+	
+
+..\SRC\PropForce.f90 : \
+	".\Release\module_parameter.mod"\
+	
+
+..\SRC\ReadData.f90 : \
+	".\Release\module_data.mod"\
+	".\Release\module_ioport.mod"\
+	".\Release\module_parameter.mod"\
+	
+
+..\SRC\ReadPara.f90 : \
+	".\Release\module_ioport.mod"\
+	".\Release\module_parameter.mod"\
+	
+
+..\SRC\TIM_Central.f90 : \
+	".\Release\module_data.mod"\
+	".\Release\module_parameter.mod"\
+	{$(INCLUDE)}"linear_operators.mod"\
+	
+
+..\SRC\TIM_GW3.F90 : \
+	".\Release\module_data.mod"\
+	".\Release\module_ioport.mod"\
+	".\Release\module_parameter.mod"\
+	{$(INCLUDE)}"linear_operators.mod"\
+	
+
+..\SRC\TIM_GW4.F90 : \
+	".\Release\module_data.mod"\
+	".\Release\module_ioport.mod"\
+	".\Release\module_parameter.mod"\
+	{$(INCLUDE)}"linear_operators.mod"\
+	
+
+..\SRC\TIM_Houbolt.f90 : \
+	".\Release\module_data.mod"\
+	".\Release\module_ioport.mod"\
+	".\Release\module_parameter.mod"\
+	{$(INCLUDE)}"linear_operators.mod"\
+	
+
+..\SRC\TIM_Newmark.f90 : \
+	".\Release\module_data.mod"\
+	".\Release\module_ioport.mod"\
+	".\Release\module_parameter.mod"\
+	{$(INCLUDE)}"linear_operators.mod"\
+	
+
+..\SRC\TIM_PREC.F90 : \
+	".\Release\module_data.mod"\
+	".\Release\module_ioport.mod"\
+	".\Release\module_parameter.mod"\
+	{$(INCLUDE)}"linear_operators.mod"\
+	
+
+..\SRC\TIM_Wilson.f90 : \
+	".\Release\module_data.mod"\
+	".\Release\module_ioport.mod"\
+	".\Release\module_parameter.mod"\
+	{$(INCLUDE)}"linear_operators.mod"\
+	
+
+..\SRC\TimeIntegration.f90 : \
+	".\Release\module_data.mod"\
+	".\Release\module_ioport.mod"\
+	".\Release\module_parameter.mod"\
+	{$(INCLUDE)}"linear_operators.mod"\
+	
+
+..\SRC\TIP90.f90 : \
+	".\Release\module_ioport.mod"\
+	
+
+..\SRC\WriteToFile.f90 : \
+	".\Release\module_ioport.mod"\
+	".\Release\module_parameter.mod"\
+	

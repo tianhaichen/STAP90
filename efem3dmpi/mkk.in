@@ -1,0 +1,16 @@
+mpif90 TimeFunction.f90 -c -i-static
+mpif90 Particle.f90 -c -i-static
+mpif90 inversee.f90 -c -i-static
+mpif90 Simulation.f90 -c -i-static
+mpif90 FFI.F90 -c -i-static
+mpif90 Element.f90 -c -i-static
+mpif90 commnode.f90 -c -i-static
+mpif90 Material.f90 -c -i-static
+mpif90 changeInput.f90 -c -i-static
+mpif90 DataOut.f90 -c -i-static
+mpif90 DataIn.f90 -c -i-static
+mpif90 FEMCalc.f90 -c -i-static
+mpif90 main.f90 -c -i-static
+mpif90  changeInput.o commnode.o DataIn.o DataOut.o Element.o FFI.o inversee.o main.o Material.o Particle.o Simulation.o TimeFunction.o FEMCalc.o -o PEFEP -i-static
+rm *.o
+rm *.mod

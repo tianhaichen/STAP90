@@ -1,0 +1,45 @@
+!
+METHOD    1                  ! 求解方法:1-增广法
+ TIME         0.e0             10.e0         1.e-3       
+
+ NBODY	 2                           ! 体数
+NHINGE   2                           ! 铰数
+NMARK    0                           ! 参考点数
+
+  NOB    1                            ! 体号
+BTYPE    0                            ! 体类型:  0-刚体,1-模态
+MASRG        0.78613e0          0.e0         0.0e0          0.e0 ! 刚体质量，质心在体坐标系的位置(X,Y,Z)
+ JXYZ        0.06502e0        1.00e-5    0.06502e0          0.e0        0.0e0           0.e0 ! 惯量(Jxx,Jyy,Jzz,Jxy,Jxz,Jyz)
+BDDIS        0.0e0             0.5e0          0.e0          0.e0         0.e0           0.e0 ! 位移初值(X,Y,Z,\Theta1,\Theta2,\Theta3) 
+BDVOL         0.e0             0.0e0       0.000e0          0.e0         0.e0           0.e0 ! 速度值(Vx,Vy,Vz,\THETA1_t,\THETA_t,\THETA_t) 
+
+  NOB    2                            ! 体号
+BTYPE    0                            ! 体类型:  0-刚体,1-模态
+MASRG        0.78613e0          0.e0         0.0e0          0.e0 ! 刚体质量，质心在体坐标系的位置(X,Y,Z)
+ JXYZ        0.06502e0        1.00e-5    0.06502e0          0.e0        0.0e0           0.e0 ! 惯量(Jxx,Jyy,Jzz,Jxy,Jxz,Jyz)
+BDDIS        0.0e0             1.5e0          0.e0          0.e0         0.e0           0.e0 ! 位移初值(X,Y,Z,\Theta1,\Theta2,\Theta3) 
+BDVOL         0.e0             0.0e0       0.000e0          0.e0         0.e0           0.e0  ! 速度值(Vx,Vy,Vz,\THETA1_t,\THETA_t,\THETA_t)     
+
+ NOH    1       !   铰点号
+TYPE      REVOLUTE                    ! 铰点类型,柱铰
+BODY     0   1                        ! 内外接体号
+LOCA1    0.e0      0.e0      0.e0     ! 铰点在内接体位置
+LOCA2    0.e0    -0.5e0      0.e0     ! 铰点在外接体位置
+  DA     1.e0      0.e0      0.e0     ! Da矢量的坐标列阵
+ DB1     0.e0      1.e0      0.e0     ! Db1矢量的坐标列阵
+ DB2     0.e0      0.e0      1.e0     ! Db2矢量的坐标列阵
+
+ NOH    2       !   铰点号
+TYPE      REVOLUTE                    ! 铰点类型,柱铰
+BODY     1   2                        ! 内外接体号
+LOCA1    0.e0     0.5e0      0.e0     ! 铰点在内接体位置
+LOCA2    0.e0    -0.5e0      0.e0     ! 铰点在外接体位置,节点号
+  DA     1.e0      0.e0      0.e0     ! Da 矢量的坐标列阵
+ DB1     0.e0      1.e0      0.e0     ! Db1矢量的坐标列阵
+ DB2     0.e0      0.e0      1.e0     ! Db2矢量的坐标列阵
+
+! NOM     1       !   参考点号
+!BODY     1                            ! 参考点所在体号
+!LOCA     0.e0     0.5e0      0.e0     ! 参考点在体坐标系的位置
+
+GRVGR         0.e0           0.e0           -9.8e0
